@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC8FBA930519109D0731201B /* Pods_NSO_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80715D28EE06D2587D7AC287 /* Pods_NSO_Project.framework */; };
+		CB9DB31C237022DE007D42E0 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DB31B237022DE007D42E0 /* FileDownloader.swift */; };
 		CBD845252363308600990E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD845242363308600990E38 /* AppDelegate.swift */; };
 		CBD845272363308600990E38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD845262363308600990E38 /* SceneDelegate.swift */; };
 		CBD845292363308600990E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD845282363308600990E38 /* ViewController.swift */; };
 		CBD8452C2363308600990E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD8452A2363308600990E38 /* Main.storyboard */; };
 		CBD8452E2363308800990E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD8452D2363308800990E38 /* Assets.xcassets */; };
 		CBD845312363308800990E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD8452F2363308800990E38 /* LaunchScreen.storyboard */; };
+		CBD8453A2363351C00990E38 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD845392363351C00990E38 /* StoreKit.framework */; };
+		CBD8453C2363352F00990E38 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD8453B2363352F00990E38 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161CF89E48B89AB8D6CA7ED4 /* Pods-NSO Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSO Project.release.xcconfig"; path = "Target Support Files/Pods-NSO Project/Pods-NSO Project.release.xcconfig"; sourceTree = "<group>"; };
+		314B71D736A0FB5E6936C43A /* Pods-NSO Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSO Project.debug.xcconfig"; path = "Target Support Files/Pods-NSO Project/Pods-NSO Project.debug.xcconfig"; sourceTree = "<group>"; };
+		80715D28EE06D2587D7AC287 /* Pods_NSO_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSO_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9DB31B237022DE007D42E0 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
 		CBD845212363308600990E38 /* NSO Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSO Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD845242363308600990E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD845262363308600990E38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		CBD8452D2363308800990E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD845302363308800990E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD845322363308800990E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD845392363351C00990E38 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CBD8453B2363352F00990E38 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD8453A2363351C00990E38 /* StoreKit.framework in Frameworks */,
+				CBD8453C2363352F00990E38 /* GameKit.framework in Frameworks */,
+				BC8FBA930519109D0731201B /* Pods_NSO_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				CBD845232363308600990E38 /* NSO Project */,
 				CBD845222363308600990E38 /* Products */,
+				CBD845382363351C00990E38 /* Frameworks */,
+				D83D1E3B207EDFAF36AB24B3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,32 @@
 				CBD845242363308600990E38 /* AppDelegate.swift */,
 				CBD845262363308600990E38 /* SceneDelegate.swift */,
 				CBD845282363308600990E38 /* ViewController.swift */,
+				CB9DB31B237022DE007D42E0 /* FileDownloader.swift */,
 				CBD8452A2363308600990E38 /* Main.storyboard */,
 				CBD8452D2363308800990E38 /* Assets.xcassets */,
 				CBD8452F2363308800990E38 /* LaunchScreen.storyboard */,
 				CBD845322363308800990E38 /* Info.plist */,
 			);
 			path = "NSO Project";
+			sourceTree = "<group>";
+		};
+		CBD845382363351C00990E38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD8453B2363352F00990E38 /* GameKit.framework */,
+				CBD845392363351C00990E38 /* StoreKit.framework */,
+				80715D28EE06D2587D7AC287 /* Pods_NSO_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D83D1E3B207EDFAF36AB24B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				314B71D736A0FB5E6936C43A /* Pods-NSO Project.debug.xcconfig */,
+				161CF89E48B89AB8D6CA7ED4 /* Pods-NSO Project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBD845352363308800990E38 /* Build configuration list for PBXNativeTarget "NSO Project" */;
 			buildPhases = (
+				9F7688614FD185FA3F2321B9 /* [CP] Check Pods Manifest.lock */,
 				CBD8451D2363308600990E38 /* Sources */,
 				CBD8451E2363308600990E38 /* Frameworks */,
 				CBD8451F2363308600990E38 /* Resources */,
+				D741345B183530CE2CC700A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F7688614FD185FA3F2321B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSO Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D741345B183530CE2CC700A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSO Project/Pods-NSO Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSO Project/Pods-NSO Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSO Project/Pods-NSO Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBD8451D2363308600990E38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +219,7 @@
 			files = (
 				CBD845292363308600990E38 /* ViewController.swift in Sources */,
 				CBD845252363308600990E38 /* AppDelegate.swift in Sources */,
+				CB9DB31C237022DE007D42E0 /* FileDownloader.swift in Sources */,
 				CBD845272363308600990E38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,37 +362,49 @@
 		};
 		CBD845362363308800990E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314B71D736A0FB5E6936C43A /* Pods-NSO Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21112019;
 				DEVELOPMENT_TEAM = 7FCMB3QMK7;
 				INFOPLIST_FILE = "NSO Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karyastudio.NSO-Project";
+				MARKETING_VERSION = 2019.11.21;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karyastudio.nsomobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CBD845372363308800990E38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161CF89E48B89AB8D6CA7ED4 /* Pods-NSO Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21112019;
 				DEVELOPMENT_TEAM = 7FCMB3QMK7;
 				INFOPLIST_FILE = "NSO Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karyastudio.NSO-Project";
+				MARKETING_VERSION = 2019.11.21;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karyastudio.nsomobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
