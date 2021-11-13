@@ -130,12 +130,47 @@ class ViewController: UIViewController, WKNavigationDelegate, UIScrollViewDelega
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url?.absoluteString
-        if ((url?.contains("/download/downloadPDFEvent/"))!)
-        {
+        if ((url?.contains("/download/downloadPDFEvent/"))!) {
             // Do the downloading operation here
             let downloadUrl = navigationAction.request.url
             UIApplication.shared.canOpenURL(downloadUrl!)
             UIApplication.shared.open(downloadUrl!)
+            // FileDownloader.loadFileSync(url: downloadUrl!) { (path, error) in
+            //    print("PDF File downloaded to : \(path!)")
+            // }
+            
+            // Block the webview to load a new url
+            decisionHandler(.cancel);
+            return;
+        } else if ((url?.contains("gojek://"))!) {
+            // Do the downloading operation here
+            let gojekUrl = navigationAction.request.url
+            UIApplication.shared.canOpenURL(gojekUrl!)
+            UIApplication.shared.open(gojekUrl!)
+            // FileDownloader.loadFileSync(url: downloadUrl!) { (path, error) in
+            //    print("PDF File downloaded to : \(path!)")
+            // }
+            
+            // Block the webview to load a new url
+            decisionHandler(.cancel);
+            return;
+        } else if ((url?.contains("https://app.midtrans.com/snap/v1/transactions/"))! && (url?.contains("/pdf"))! ) {
+            // Do the downloading operation here
+            let pdfUrl = navigationAction.request.url
+            UIApplication.shared.canOpenURL(pdfUrl!)
+            UIApplication.shared.open(pdfUrl!)
+            // FileDownloader.loadFileSync(url: downloadUrl!) { (path, error) in
+            //    print("PDF File downloaded to : \(path!)")
+            // }
+            
+            // Block the webview to load a new url
+            decisionHandler(.cancel);
+            return;
+        } else if (!(url?.contains("nsoproject.com"))! && !(url?.contains("accounts.google.com"))!) {
+            // Do the downloading operation here
+            let otherUrl = navigationAction.request.url
+            UIApplication.shared.canOpenURL(otherUrl!)
+            UIApplication.shared.open(otherUrl!)
             // FileDownloader.loadFileSync(url: downloadUrl!) { (path, error) in
             //    print("PDF File downloaded to : \(path!)")
             // }
